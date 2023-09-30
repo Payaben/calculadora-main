@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url("./1.png"); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+:root {
+  --primary-color:  rgb(255, 200, 0);
+  --secondary-color: #fff;
+}
+header{
+font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    text-align: center;
+    background-color :rgba(0,0,0,0.5); /* cambia el color de fondo a negro con transparencia */
+    backdrop-filter :blur(10px); /* añade un efecto de desenfoque al fondo */
+    -webkit-backdrop-filter :blur(10px); /* añade un efecto de desenfoque al fondo */
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--secondary-color); /* Cambio el color del texto a blanco */
+}
+
+.calculadora {
+  width: 314px;
+  margin-left: 200px;
+  margin-top: 100px;
+  border-radius: 5px;
+  transition: transform .3s; /* Transición de transformación */
+  backdrop-filter :blur(10px); /* añade un efecto de desenfoque al fondo */
+  -webkit-backdrop-filter :blur(10px); /* añade un efecto de desenfoque al fondo */
+}
+
+.calculadora:hover {
+    transform: scale(1.05); /* Escalar el elemento un poco */
+}
+
+#pantalla {
+  width: 90%;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+input[type="button"] {
+  width: 70px;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  background: linear-gradient(to bottom,  rgb(255, 200, 0),  rgba(255, 200, 0, 0.926)); /* Gradiente de color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0,) 
+}
+  input[type="button"]:hover {
+      background-color: #ddd;
+    }
+
+    input[type="button"]:last-child {
+      margin-right:0; 
+    }
+  input::placeholder {
+      color: transparent;
+      transition: all 0.3s ease;
+  }
+  input:focus::placeholder {
+      color:  rgb(255, 89, 0);
+  }
+  
+  /* Efecto de borde en el placeholder */
+  input::placeholder {
+      border: 1px solid  rgb(255, 200, 0);
+  }
+  
+  /* Efecto de fondo en el placeholder */
+  input::placeholder {
+      background-image: url('ruta/de/la/imagen');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 20px;
+  }
+ .calculadora input{
+    color: #ff5500;
+    font-weight: bold;
+  }
